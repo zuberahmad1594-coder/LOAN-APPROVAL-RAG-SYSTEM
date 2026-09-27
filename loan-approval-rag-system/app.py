@@ -91,7 +91,7 @@ def build_index():
 existing_docs = [f for f in os.listdir(DOCS_DIR) if f.endswith((".pdf", ".docx"))] if os.path.exists(DOCS_DIR) else []
 
 # UI Layout - Sidebar Navigation
-st.sidebar.title("🏦 Underwriting Hub")
+st.sidebar.title("🏦 State Bank of Nashik")
 menu = st.sidebar.radio("Navigation", ["1. Loan Eligibility Predictor", "2. AI Policy Underwriting RAG"])
 
 # Silent Background Auto-Indexing
