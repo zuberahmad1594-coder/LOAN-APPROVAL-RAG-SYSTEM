@@ -1,0 +1,10 @@
+streamlit
+pandas
+numpy
+scikit-learn
+joblib
+faiss-cpu
+sentence-transformers
+google-genai
+pypdf
+python-docx
