@@ -24,9 +24,10 @@ if not api_key:
 
 client = genai.Client(api_key=api_key)
 
-# Directories
-DOCS_DIR = "docs"
-MODEL_PATH = "models/loan_model.pkl"
+# Enterprise Dynamic Pathing
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DOCS_DIR = os.path.join(BASE_DIR, "docs")
+MODEL_PATH = os.path.join(BASE_DIR, "models", "loan_model.pkl")
 
 os.makedirs(DOCS_DIR, exist_ok=True)
 os.makedirs("models", exist_ok=True)
